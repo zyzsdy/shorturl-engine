@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>shorturl_engine_backend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ccxc.Core.DbOrm\Ccxc.Core.DbOrm.csproj" />
+    <ProjectReference Include="..\Ccxc.Core.HttpServer\Ccxc.Core.HttpServer.csproj" />
+    <ProjectReference Include="..\Ccxc.Core.Utils\Ccxc.Core.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="shorturl.service">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+﻿[Unit]
+Description=Minyami ShortUrl Service Backend
+
+[Service]
+ExecStart=/var/shorturl/shorturl-engine-backend
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/node/bin
+WorkingDirectory=/var/shorturl/
+
+[Install]
+WantedBy=multi-user.target
